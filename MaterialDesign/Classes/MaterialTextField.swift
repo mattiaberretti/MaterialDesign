@@ -18,7 +18,7 @@ public class MaterialTextField: BaseTextField {
     public var UnderlineSize : CGFloat = 2
     
     
-    func inizialize(){
+    func setUp(){
         self.borderStyle = .none
         self.layer.shadowColor = DisableColore.cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 1)
@@ -40,17 +40,17 @@ public class MaterialTextField: BaseTextField {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.inizialize()
+        self.setUp()
     }
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.inizialize()
+        self.setUp()
     }
     
     override public func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        self.inizialize()
+        self.setUp()
     }
 
 }
