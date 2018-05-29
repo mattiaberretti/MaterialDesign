@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MaterialDesign_Example' do
+  pod 'MaterialDesign', :path => '../'
+
+  target 'MaterialDesign_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
