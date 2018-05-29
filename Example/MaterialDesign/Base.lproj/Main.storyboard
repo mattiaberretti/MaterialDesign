@@ -22,44 +22,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xko-Ck-hVI" customClass="BaseTextField" customModule="MaterialDesign">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3mp-O3-CNP">
                                 <rect key="frame" x="32" y="36" width="311" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showDone" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="nextField" destination="knu-B1-Qxf" id="aOZ-lB-foo"/>
-                                </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="knu-B1-Qxf" customClass="MaterialTextField" customModule="MaterialDesign">
-                                <rect key="frame" x="32" y="82" width="311" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showDone" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <outlet property="previusField" destination="Xko-Ck-hVI" id="cZT-qy-9h0"/>
-                                </connections>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5rK-XA-0Z8" customClass="BorderBottom" customModule="MaterialDesign">
+                                <rect key="frame" x="297" y="82" width="46" height="30"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="knu-B1-Qxf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="8ht-we-kg8"/>
-                            <constraint firstItem="Xko-Ck-hVI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="BfJ-fq-Bkw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Xko-Ck-hVI" secondAttribute="trailing" constant="16" id="KL8-S2-KTf"/>
-                            <constraint firstItem="knu-B1-Qxf" firstAttribute="top" secondItem="Xko-Ck-hVI" secondAttribute="bottom" constant="16" id="b07-Ba-5wx"/>
-                            <constraint firstItem="Xko-Ck-hVI" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="lgi-sq-INH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="knu-B1-Qxf" secondAttribute="trailing" constant="16" id="wua-02-GO7"/>
+                            <constraint firstItem="5rK-XA-0Z8" firstAttribute="top" secondItem="3mp-O3-CNP" secondAttribute="bottom" constant="16" id="DXM-zN-JSg"/>
+                            <constraint firstItem="3mp-O3-CNP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="I7U-GN-B53"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3mp-O3-CNP" secondAttribute="trailing" constant="16" id="L9e-9s-n79"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5rK-XA-0Z8" secondAttribute="trailing" constant="16" id="PDw-f9-QYB"/>
+                            <constraint firstItem="3mp-O3-CNP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="dte-s9-1Oo"/>
+                            <constraint firstItem="5rK-XA-0Z8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="ysq-dy-Rak"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="75.112443778110944"/>
         </scene>
     </scenes>
 </document>
